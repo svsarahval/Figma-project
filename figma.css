@@ -8,7 +8,10 @@
 
 body{ 
  background-image:url(/pexels-laura-tancredi-7078619.jpg);
- 
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
 }
 
 .everything{
@@ -97,8 +100,8 @@ color: #00AAB5;
  .everything{
 background-image: url(/pexels-pixabay-235985.jpg); 
 }
-
-/* .pic-quotes{
+}
+.pic-quotesContainer{ 
  display: flex;
  flex-direction: row;
 justify-content: space-between;
