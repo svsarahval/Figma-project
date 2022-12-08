@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
-*{
- padding: 0%;
- margin: 0%;
- box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-body{ 
- background-image:url(/pexels-laura-tancredi-7078619.jpg);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- background-attachment: fixed;
+body {
+  background-image: url(/pexels-laura-tancredi-7078619.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.everything{
- display: flex;
- flex-direction: column;
- align-content: center;
+.everything {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-.Headers{
- font-family: 'Imprima', sans-serif;
- color: #00AAB5;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- margin: 15%;
- margin-top: 10%;
- padding: 30px;
+.Headers {
+  font-family: 'Imprima', sans-serif;
+  color: #00aab5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15%;
+  margin-top: 10%;
+  padding: 30px;
 }
 
 /* .sociableLogoPic{
@@ -37,59 +37,58 @@ body{
  height: 20vh;
 } */
 
-.greeting{
-width: 70%;
-height: auto;
+.greeting {
+  width: 70%;
+  height: auto;
 }
 
-.words{
- margin-bottom: 15%;
- display: flex;
- align-self: center;
- justify-content: center;
- text-align: center;
- padding: 30px;
+.words {
+  margin-bottom: 15%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
 }
 
-.firstTitle{
- display: flex;
- align-self: center;
- justify-content: center;
- text-align: center;
- padding: 30px;
+.firstTitle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
 }
 
-.formPicMobile{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: #00AAB5;
-/* padding: 30px; */
+.formPicMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00aab5;
+  /* padding: 30px; */
 }
 
-.form{
- margin: 15%;
- font-size: 30px;
- display: flex;
- flex-direction: column;
- justify-content: center;
+.form {
+  margin: 15%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.clickMe{
- color: #574242;
- 
- font-size: 23px;
- border-color: #00AAB5;
- border-radius: 8%;
+.clickMe {
+  color: #574242;
+
+  font-size: 23px;
+  border-color: #00aab5;
+  border-radius: 8%;
 }
 
-.clickMe:hover{
- background-color: #00AAB5;
+.clickMe:hover {
+  background-color: #00aab5;
 }
 @media (min-width: 680px) {
-
-/* @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
 *{
  padding: 0%;
@@ -97,44 +96,59 @@ color: #00AAB5;
  box-sizing: border-box;
 }*/
 
- .everything{
-background-image: url(/pexels-pixabay-235985.jpg); 
+  .everything {
+    background-image: url(/pexels-pixabay-235985.jpg);
+  }
 }
+.pic-quotesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.pic-quotesContainer{ 
- display: flex;
- flex-direction: row;
-justify-content: space-between;
+
+.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .picsDeskLand2 {
- width: 20px;
- height: 20px;
+  width: 25%;
+  height: 25%;
 }
 
-.picsDeskLand1{
-  width: 20px;
- height: 20px;
+.picsDeskLand1 {
+  width: 25%;
+  height: 25%;
+  order: -1;
 }
 
-.picsDeskLand3{
-  width: 20px;
- height: 20px;
- display: flex;
- flex-direction: row;
- justify-content: flex-start;
-}*/
+.picsDeskLand3 {
+  width: 25%;
+  height: 25%;
+  display: flex;
+  /* flex-direction: row;
+ justify-content: flex-start; */
+}
 
 /* .greeting{
   display: none; 
 } */
 
+.words {
+  font-size: 40px;
+}
 
+.firstTitle {
+  font-size: 50px;
+}
 
-
-
-
-
-
-
-
+.form {
+  text-size-adjust: 40px;
+}
