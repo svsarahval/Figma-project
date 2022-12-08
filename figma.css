@@ -35,6 +35,11 @@ height: auto;
 
 .words{
  margin-bottom: 15%;
+ display: flex;
+ align-self: center;
+ justify-content: center;
+ text-align: center;
+ padding: 30px;
 }
 
 
@@ -63,6 +68,11 @@ color: #00AAB5;
 .clickMe:hover{
  background-color: #00AAB5;
 }
+@media screen and (max-width: 740;){
 
+.everything{
+background-image: url(/pexels-pixabay-235985.jpg);
+}
 
+}
 
