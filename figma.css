@@ -13,7 +13,8 @@ body{
 
 .everything{
  display: flex;
- align-content: space-between;
+ flex-direction: column;
+ align-content: center;
 }
 
 .Headers{
@@ -27,6 +28,11 @@ body{
  margin-top: 10%;
  padding: 30px;
 }
+
+/* .sociableLogoPic{
+ width: 40vw;
+ height: 20vh;
+} */
 
 .greeting{
 width: 70%;
@@ -42,6 +48,13 @@ height: auto;
  padding: 30px;
 }
 
+.firstTitle{
+ display: flex;
+ align-self: center;
+ justify-content: center;
+ text-align: center;
+ padding: 30px;
+}
 
 .formPicMobile{
 display: flex;
@@ -55,6 +68,9 @@ color: #00AAB5;
 .form{
  margin: 15%;
  font-size: 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
 
 .clickMe{
@@ -68,11 +84,54 @@ color: #00AAB5;
 .clickMe:hover{
  background-color: #00AAB5;
 }
-@media screen and (max-width: 740;){
+@media (min-width: 680px) {
 
-.everything{
-background-image: url(/pexels-pixabay-235985.jpg);
+/* @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;
+}*/
+
+ .everything{
+background-image: url(/pexels-pixabay-235985.jpg); 
 }
 
+/* .pic-quotes{
+ display: flex;
+ flex-direction: row;
+justify-content: space-between;
 }
+
+.picsDeskLand2 {
+ width: 20px;
+ height: 20px;
+}
+
+.picsDeskLand1{
+  width: 20px;
+ height: 20px;
+}
+
+.picsDeskLand3{
+  width: 20px;
+ height: 20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+}*/
+
+/* .greeting{
+  display: none; 
+} */
+
+
+
+
+
+
+
+
+
 
