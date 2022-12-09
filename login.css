@@ -13,13 +13,19 @@ body{
   background-size: cover;
   background-attachment: fixed;
   background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+/* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(163,112,23,1) 100%);
 }
 
 .formBox{
- height: 30px;
- font-size: 15px;
- padding: 5px;
+ width: 300px;
+ display: flex;
+ margin-bottom: 20px;
+ height: 40px;
+ color: #574242;
+ font-size: 20px;
+ border-radius: 8%;
 }
 
 .label{

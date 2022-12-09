@@ -8,10 +8,10 @@
 
 body {
   background-image: url(/pexels-laura-tancredi-7078619.jpg);
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .everything {
@@ -68,17 +68,26 @@ body {
   /* padding: 30px; */
 }
 
+.pic-quotesContainer{
+  display: none;
+}
+
 .form {
-  margin: 15%;
+   margin: 15%;
   font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+   /* width: 300px;
+ display: flex;
+ margin-bottom: 20px;
+ height: 40px;
+ color: #574242;
+ font-size: 20px;
+ border-radius: 8%; */
 
 .clickMe {
   color: #574242;
-
   font-size: 23px;
   border-color: #00aab5;
   border-radius: 8%;
@@ -87,6 +96,7 @@ body {
 .clickMe:hover {
   background-color: #00aab5;
 }
+
 @media (min-width: 680px) {
   /* @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
@@ -99,7 +109,7 @@ body {
   .everything {
     background-image: url(/pexels-pixabay-235985.jpg);
   }
-}
+
 .pic-quotesContainer {
   display: flex;
   flex-direction: column;
@@ -151,4 +161,5 @@ body {
 
 .form {
   text-size-adjust: 40px;
+}
 }
