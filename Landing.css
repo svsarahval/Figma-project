@@ -7,17 +7,27 @@
 }
 
 body {
-  background-image: url(/pexels-laura-tancredi-7078619.jpg);
-  /* background-position: center;
+  background-image: url(assets/mobile\ landing.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .everything {
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.email {
+  width: 300px;
+  display: flex;
+  margin-bottom: 20px;
+  height: 40px;
+  color: #574242;
+  font-size: 20px;
+  border-radius: 8%;
 }
 
 .Headers {
@@ -49,6 +59,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 30px;
+  /* font-size: 40px; */
 }
 
 .firstTitle {
@@ -57,6 +68,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 30px;
+  font-size: 40px;
 }
 
 .formPicMobile {
@@ -68,23 +80,24 @@ body {
   /* padding: 30px; */
 }
 
-.pic-quotesContainer{
+.pic-quotesContainer {
   display: none;
 }
 
 .form {
-   margin: 15%;
+  margin: 15%;
   font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-   /* width: 300px;
- display: flex;
- margin-bottom: 20px;
- height: 40px;
- color: #574242;
- font-size: 20px;
- border-radius: 8%; */
+  width: 300px;
+  display: flex;
+  /* margin-bottom: 20px; */
+  /* height: 40px; */
+  color: #574242;
+  font-size: 30px;
+  border-radius: 8%;
+}
 
 .clickMe {
   color: #574242;
@@ -96,8 +109,7 @@ body {
 .clickMe:hover {
   background-color: #00aab5;
 }
-
-@media (min-width: 680px) {
+@media (min-width: 740px) {
   /* @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
 *{
@@ -106,60 +118,68 @@ body {
  box-sizing: border-box;
 }*/
 
-  .everything {
-    background-image: url(/pexels-pixabay-235985.jpg);
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(assets/desktop\ landing.jpg);
   }
 
-.pic-quotesContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  /* .everything {
+    background-image: url(/pexels-pixabay-235985.jpg);
+  } */
 
-.pics {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .pic-quotesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.quotes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.picsDeskLand2 {
-  width: 25%;
-  height: 25%;
-}
+  .quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.picsDeskLand1 {
-  width: 25%;
-  height: 25%;
-  order: -1;
-}
+  .picsDeskLand2 {
+    width: 25%;
+    height: 25%;
+  }
 
-.picsDeskLand3 {
-  width: 25%;
-  height: 25%;
-  display: flex;
-  /* flex-direction: row;
+  .picsDeskLand1 {
+    width: 25%;
+    height: 25%;
+    order: -1;
+  }
+
+  .picsDeskLand3 {
+    width: 25%;
+    height: 25%;
+    display: flex;
+    /* flex-direction: row;
  justify-content: flex-start; */
-}
+  }
 
-/* .greeting{
+  /* .greeting{
   display: none; 
 } */
 
-.words {
-  font-size: 40px;
-}
+  .words {
+    font-size: 40px;
+  }
 
-.firstTitle {
-  font-size: 50px;
-}
+  .firstTitle {
+    font-size: 50px;
+  }
 
-.form {
-  text-size-adjust: 40px;
-}
+  .form {
+    text-size-adjust: 40px;
+  }
 }

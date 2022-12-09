@@ -1,0 +1,18 @@
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;
+}
+
+.userArea{
+ display: flex;
+ flex-direction: row;
+ width: 300px;
+
+}
+
+.userPic{
+width: 20px;
+height: 20px;
+padding: 200px;
+}
