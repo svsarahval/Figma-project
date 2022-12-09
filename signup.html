@@ -5,17 +5,29 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=, initial-scale=1.0">
  <title>Sociable: Sign UP</title>
+ <link rel="stylesheet" href="signup.css">
 </head>
 <body>
 
  <header>
+  <h1 class="greeting">Welcome to Sociable</h1>
   <h1 class="greeting">Join our Community</h1>
  </header>
  <main>
-  <form>
-    <input type="text" placeholder="Enter Username" name="username" required> <label>Password : </label> <input type="password" placeholder="Enter Password" name="password" required> <button type="submit">Login</button>
+  <form class="form">
+   <label>Email:</label>
+    <input class="formbx " type="email" placeholder="Enter Email" name="email" required> <label> Phone Number: </label> <input class="formbx" type="tel" placeholder="Enter Phone Number" name="phone-number">
+    <label>First Name:</label> <input class="formbx" type="text" placeholder="Enter First Name" name="fname" required>
+    <label>Last Name: </label> <input class="formbx" type="text" placeholder="Enter Last Name" name="lname" required>
+    <label>Date Of Birth: </label> <input class="formbx" type="date" placeholder="Enter Birthdate" name="dob" required>
+    <label>Password : </label> <input class="formbx" type="password" placeholder="Enter Password" name="password" required>
+    <label>Confirm Password : </label> <input class="formbx" type="password" placeholder="Confirm Password" name="password" required>
+    <button class="btn">Submit</button>
   </form>
+  <footer class="logo"> <img src="/Logo.png" alt="Logo"></footer>
+ 
  </main>
+
  
 </body>
 </html>
