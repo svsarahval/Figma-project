@@ -28,9 +28,10 @@ font-size: 25px;
 
 .button{ 
   color: #574242;
-  font-size: 23px;
+  font-size: 15px;
   border-color: #00aab5;
   border-radius: 8%;
+  height: 35px;
  } 
  .button:hover {
   background-color: #00aab5;
@@ -52,4 +53,26 @@ flex-direction: column;
    justify-content: center;
    align-items: center;
    margin-bottom; 30px:
+  }
+
+  .signup{
+   color: #574242;
+  font-size: 15px;
+  border-color: #00aab5;
+  border-radius: 8%;
+  height: 35px;
+  }
+
+  .signup:hover{
+   background-color: #00aab5; 
+  }
+
+  .new{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .noaccount{
+    font-size: 20px;
   }
