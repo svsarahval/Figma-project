@@ -1,3 +1,7 @@
+/* Mobile View */
+
+ @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
 *{
  padding: 0%;
  margin: 0%;
@@ -13,21 +17,16 @@ background-position: center;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  color: rgb(239, 222, 37) ;
-
+  color: rgb(239, 222, 37);
+  font-family: imprima;
 }
 
 .userinfo{
- font-size: 1.2em;
+ font-size: 1.7em;
  display: flex;
  justify-content: left;
  align
 }
-
-/* .userArea{
- display: flex;
- flex-direction: column;
-} */
  
 .profilePic{
  display: flex;
@@ -41,6 +40,8 @@ background-position: center;
  .vidContainer{
   display: flex;
   justify-content: space-around;
+  padding: 5em;
+  margin-top: 2em;
  } 
 
 /* Post section */
@@ -49,6 +50,96 @@ background-position: center;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- padding: 4em;
+ padding:  3em;
+}
+
+p{
+ font-size: 1.7rem;
+}
+
+.post{
+ padding-top:  2em;
+ padding-left: 3em;
+ padding-right: 3em;
+ font-size: 1.35em;
+
+}
+
+.comments{
+ padding-left: 4em;
+}
+
+/* h1{
+ display: none;
+} */
+
+
+.friendsProfile{
+ display: none;
+}
+
+.logopic{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+/* Desktop View Below */
+
+@media (min-width: 680px){
+
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+}
+
+.friendsProfile{
+ display: flex;
+ flex-direction: row;
+} 
+
+.userinfo{
+ font-size: 1.7em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ 
+.profilePic{
+ display: grid;
+ place-items: center;
+ /* justify-content: center;
+ align-items: center;
+ align-self: center; */
+ width: 28%;
+ height: 18%;
+ padding: 10px;
+}
+
+/* #userpic{
+ display: flex;
+ justify-content: center;
+ align-self: center;
+ margin: 0;
+} */
+
+.container4posts{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding:  10em;
+}
+
+.vidContainer{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  margin-top: 4em;
+ } 
+
+h1{
+ text-align: center;
+}
 
 }
