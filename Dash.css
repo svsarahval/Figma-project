@@ -4,15 +4,41 @@
  box-sizing: border-box;
 }
 
-.userArea{
+body{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(102,80,32,1) 100%);
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  color: rgb(239, 222, 37) ;
+
+}
+
+.userinfo{
+ font-size: 1.2em;
  display: flex;
- flex-direction: row;
- width: 300px;
-
+ justify-content: left;
+ align
 }
 
-.userPic{
-width: 20px;
-height: 20px;
-padding: 200px;
+/* .userArea{
+ display: flex;
+ flex-direction: column;
+} */
+ 
+.profilePic{
+ display: flex;
+ flex-direction: column
+ justify-content: flex-start;
+ width: 30%;
+ height: 25%;
+ padding: 10px;
 }
+
+ .vidContainer{
+  display: flex;
+  justify-content: space-around;
+ }
