@@ -45,4 +45,10 @@ background-position: center;
 
 /* Post section */
 
+.container4posts{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 4em;
 
+}
