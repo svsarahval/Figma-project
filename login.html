@@ -7,33 +7,36 @@
     <title>Sociable: Log In</title>
     <link rel="stylesheet" href="login.css" />
   </head>
- 
+
   <body>
-   <header>
-  <img class="logo" src="/Logo.png" alt="Logo">
-  <h1 class="words">Welcome Back</h1>
-  <h1 class="words">Log In</h1>
- </header>
+    <header>
+      <img class="logo" src="/Logo.png" alt="Logo" />
+      <h1 class="words">Welcome Back</h1>
+      <h1 class="words">Log In</h1>
+    </header>
     <main>
       <form class="login">
-       <label class="label">Email: </label>
-        <input class="formBox" 
+        <label class="label">Email: </label>
+        <input
+          class="formBox"
           type="email"
           placeholder="Enter Email"
           name="email"
           required
         />
         <label class="label">Password : </label>
-        <input class="formBox"
+        <input
+          class="formBox"
           type="password"
           placeholder="Enter Password"
           name="password"
           required
         />
         <div class="new">
-        <button class="button">Login</button>
-        <p class="noaccount">Don't Have an account?</p>
-        <button class="signup">Sign up!</button>
+          <a href="/Dash.html"> <button class="button">Login</button></a>
+          <!-- <p class="forgotPassword">Forgot Password?</p> -->
+          <p class="noaccount">Don't Have an account?</p>
+          <a href="/signup.html"> <button class="signup">Sign up!</button></a>
         </div>
       </form>
     </main>
