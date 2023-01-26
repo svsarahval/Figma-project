@@ -1,16 +1,52 @@
 {
-  "user1": {
-    "firstName": "Sarah",
-    "lastName": "Valentine",
-    "email": "svsarahval@gmail.com",
-    "dateOfBirth": "08/31/1992",
-    "password": "password"
+  "users": {
+    "user1": {
+      "firstName": "Sarah",
+      "lastName": "Valentine",
+      "email": "svsarahval@gmail.com",
+      "dateOfBirth": "08/31/1992",
+      "password": "password"
+    },
+    "user2": {
+      "firstName": "Kenny",
+      "lastName": "Lattimore",
+      "email": "KLat@gmail.com",
+      "dateOfBirth": "07/12/1982",
+      "password": "password"
+    },
+    "user3": {
+      "firstName": "Kia Ki Ki",
+      "lastName": "Johnson",
+      "email": "kikijohnson@gmail.com",
+      "dateOfBirth": "08/13/1986",
+      "password": "password"
+    },
+    "user4": {
+      "firstName": "Nathan Royal Seed",
+      "lastName": "Tate",
+      "email": "NathTate2@gmail.com",
+      "dateOfBirth": "05/04/2001",
+      "password": "password"
+    }
   },
-  "user2": {
-    "firstName": "Jetta",
-    "lastName": "Lo",
-    "email": "jettalo@gmail.com",
-    "dateOfBirth": "07/12/1982",
-    "password": "password"
+  "posts": {
+    "post1": {
+      "userID": "user2",
+      "picture": "/assets/kenny.jpg",
+      "name": "Kenny Lattimore",
+      "content": "A vision of love, light, and beauty  from the inside out.  My wife Faith shared this photo a few days ago ahead of the party to shower our baby girl with love and asked for any name suggestions - we got a lot of beautiful responses & loved reading through them (some people were doing the most 😄) as we are still deciding.  We are happy to be nearing the home stretch with our soon to be little scholar!"
+    },
+    "post2": {
+      "userID": "user3",
+      "picture": "/assets/ki ki.jpg",
+      "name": "Kia Ki Ki Johnson",
+      "content": "I had to hop on social media to announce that today my son, my baby, my heart, got approved for the U. S. Air Force. In these photos I was dropping him off at MEPS for his final examination a couple of months ago and let’s just say this process has been a journey but we got that call today! He did it! Now I have to process him leaving me soon 😔😔 but I’m so so so proud and excited for his approaching life experience."
+    },
+    "post3": {
+      "userID": "user4",
+      "picture": "/assets/Nathan.jpg",
+      "name": "Nathan Royal Seed Tate",
+      "content": "You have to be like the willow flowing through every situation bending and swaying becoming and adapting to change! Take it one day at a time! One moment at a time! One breath at a time! We must also be conscious of our bodies! And the way air flows through it! Taking a second to feel your breath go in and out of your body! The piece of mind you gain!"
+    }
   }
 }

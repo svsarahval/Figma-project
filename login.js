@@ -1,7 +1,26 @@
+$(document).ready(function() {
+  let userData = [
+  {
+    email: 'svsarahval@gmail.com',
+    password: 'password',
+  },
+  {
+    email: 'KLat@gmail.com',
+    password: 'password',
+  },
+  {
+    email: 'kikijohnson@gmail.com',
+    password: 'password',
+  },
+  {
+    email: 'NathTate2@gmail.com',
+    password: 'password',
+  },
+];
 
-
-
-
+const password = document.getElementById('password');
+const email = document.getElementById('email');
+const loginForm = document.getElementById('loginForm');
 const signUpBtn = document.getElementById('signUpBtn');
 const logInBtn = document.getElementById('logInBtn');
 
@@ -12,38 +31,32 @@ function gotoSignUp(e) {
   window.location.replace('/signUp.html');
 }
 // Making Sign In go to Dash page
-logInBtn.addEventListener('click', gotoDash);
-function gotoDash(dash) {
-  dash.preventDefault();
-  window.location.replace('/Dash.html');
-  alert('working');
+// logInBtn.addEventListener('click', gotoDash);
+// function gotoDash(dash) {
+//   dash.preventDefault();
+//   window.location.replace('/Dash.html');
+//   alert('working');
+// }
 
+// validate email and password
+let emailValue = email.value;
+let passwordValue = password.value;
 
+loginForm.addEventListener('click', gotoDash);
 
+function gotoDash(e) {
+  e.preventDefault();
+  let isValid = false;
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].email === emailValue && users[i].password === passwordValue) {
+      isValid = true;
+      break;
+    }
+  }
 
-
-
-
-
-
-
-
-
-
+  if ((isValid /= true)) {
+    alert('Invalid email or password');
+  } else {
+    window.location.href = 'Dash.html';
+  }
 }
-// import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js';
-// import {
-//   getAuth,
-//   signInWithEmailAndPassword,
-// } from 'https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js';
-
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyAMz5TdOBI8Z9gYTJgW3I_2RsT_hFbCGc0',
-//   authDomain: 'login-page-sociable.firebaseapp.com',
-//   projectId: 'login-page-sociable',
-//   storageBucket: 'login-page-sociable.appspot.com',
-//   messagingSenderId: '537222146046',
-//   appId: '1:537222146046:web:26c8dc860739cfdc8202af',
-// };
-// const app = initializeApp(firebaseConfig);
-// const auth = getAuth(app);
