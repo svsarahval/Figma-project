@@ -1,0 +1,16 @@
+{
+  "user1": {
+    "firstName": "Sarah",
+    "lastName": "Valentine",
+    "email": "svsarahval@gmail.com",
+    "dateOfBirth": "08/31/1992",
+    "password": "password"
+  },
+  "user2": {
+    "firstName": "Jetta",
+    "lastName": "Lo",
+    "email": "jettalo@gmail.com",
+    "dateOfBirth": "07/12/1982",
+    "password": "password"
+  }
+}

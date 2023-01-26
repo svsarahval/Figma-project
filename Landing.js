@@ -2,14 +2,14 @@
 const signUpBtn = document.getElementById('signUpBtn');
 const signInBtn = document.getElementById('signInBtn');
 
-// Making sign up go to Sign up page
+// Making sign up  go to Sign up page
 signUpBtn.addEventListener('click', gotoSignUp);
 function gotoSignUp(e) {
  e.preventDefault()
   window.location.replace('/signUp.html');
 
 }
-
+// Making Sign In go to Sign Up page
 signInBtn.addEventListener('click', gotoSignIn);
 function gotoSignIn (logIn){
  logIn.preventDefault()

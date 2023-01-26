@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sociable: Log In</title>
     <link rel="stylesheet" href="login.css" />
+    <script src="/login.js" defer></script>
   </head>
 
   <body>
@@ -22,7 +23,7 @@
           type="email"
           placeholder="Enter Email"
           name="email"
-          required
+          
         />
         <label class="label">Password : </label>
         <input
@@ -30,13 +31,13 @@
           type="password"
           placeholder="Enter Password"
           name="password"
-          required
+          
         />
         <div class="new">
-          <a href="/Dash.html"> <button class="button">Login</button></a>
+           <button class="button" id="logInBtn">Login</button>
           <!-- <p class="forgotPassword">Forgot Password?</p> -->
           <p class="noaccount">Don't Have an account?</p>
-          <a href="/signup.html"> <button class="signup">Sign up!</button></a>
+          <button class="signup" id="signUpBtn">Sign up!</button>
         </div>
       </form>
     </main>
