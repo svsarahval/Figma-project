@@ -16,12 +16,7 @@
       <h1 class="words">Log In</h1>
     </header>
     <main>
-      <form
-        action=""
-        onsubmit="e.preventDefault(); handleFormSubmit(); autocomplete = off"
-        class="login"
-        id="loginForm"
-      >
+      <form class="login" id="loginForm">
         <label class="label">Email: </label>
         <input
           class="formBox"
@@ -39,10 +34,10 @@
           name="password"
         />
         <div class="new">
-          <button class="button" id="logInBtn">Login</button>
+          <button type="submit" class="button" id="logInBtn">Login</button>
           <!-- <p class="forgotPassword">Forgot Password?</p> -->
           <p class="noaccount">Don't Have an account?</p>
-          <button class="signup" id="signUpBtn">Sign up!</button>
+          <button type="submit" class="signup" id="signUpBtn">Sign up!</button>
         </div>
       </form>
     </main>

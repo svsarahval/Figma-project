@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=f, initial-scale=1.0" />
     <title>Sociable: Dashboard</title>
     <link rel="stylesheet" href="Dash.css" />
+    <script src="/Dash.js" defer></script>
   </head>
   <body>
     <header class="top">
@@ -21,13 +22,13 @@
         <p class="userinfo">Please check out my website</p>
         <p class="userinfo">for booking email me</p>
       </div>
-
-<div class="userpost" id="userpost">
+<form>
+<div class="userPost" id="userPost">
   <textarea name="userInput" id="userInput" cols="30" rows="10" class="userInput"></textarea>
-<button id="userPostBtn">Post</button>
-
-
-    </header>
+<button type="submit" id="userPostBtn">Post</button>
+</div>
+  </form>
+ </header>
 
     <!-- below is Vid section -->
 
@@ -49,7 +50,7 @@
       </div>
 
 <!-- below are the  Friends post  -->
-      <div class="container4posts">
+      <div class="container4posts" id="container4posts">
         <div class="post">
          <p><img class="squarePic" src="/assets/kenny.jpg"
           width="60"
@@ -58,7 +59,7 @@
           </sup> <p>A vision of love, light, and beauty from the inside out.  
 My wife Faith shared this photo a few days ago ahead of the party to shower our baby girl with love and asked for any name suggestions - we got a lot of beautiful responses & loved reading through them (some people were doing the most 😄) as we are still deciding.  We are happy to be nearing the home stretch with our soon to be little scholar!</p></p>
          </div>
-        </div>
+        
 
         <div class="post">
          <p> <img class="squarePic" src="/assets/ki ki.jpg"
@@ -75,7 +76,7 @@ My wife Faith shared this photo a few days ago ahead of the party to shower our 
           placeholder="comments">
           <button type="submit">Submit</button>
          </form> -->
-        </div>
+        <!-- </div> -->
         <div class="post">
          <p><img class="squarePic" src="/assets/Nathan.jpg"
           width="60"
@@ -92,8 +93,9 @@ We must also be conscious of our bodies! And the way air flows through it! Takin
           placeholder="comments">
           <button type="submit">Submit</button>
          </form> -->
-        </div>
+        <!-- </div> -->
       </div>
+    
     </main>
 <!-- <h1>Check Out Your Friends Profiles</h1>
     <aside class="friendsProfile">

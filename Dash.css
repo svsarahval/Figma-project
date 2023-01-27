@@ -48,7 +48,7 @@ background-position: center;
 .userpost{
    display: flex;
  flex-direction: column;
- justify-content: space-between;
+ justify-content: center;
  padding:  3em;
  length : 10em;
  width: 40em;
