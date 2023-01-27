@@ -1,14 +1,56 @@
+const password = document.getElementById('password');
+const email = document.getElementById('email');
+const loginForm = document.getElementById('loginForm');
+const signUpBtn = document.getElementById('signUpBtn');
+const logInBtn = document.getElementById('logInBtn');
+
+// const username = document.getElementById('username');
 // const password = document.getElementById('password');
-// const email = document.getElementById('email');
-// const loginForm = document.getElementById('loginForm');
-// const signUpBtn = document.getElementById('signUpBtn');
-// const logInBtn = document.getElementById('logInBtn');
 
-// const USERS_URL =
-//   'https://login-page-sociable-default-rtdb.firebaseio.com/users';
-// const EXT = '.json';
+const USERS_URL =
+  'https://login-page-sociable-default-rtdb.firebaseio.com/users';
+const POSTS_URL =
+  'https://login-page-sociable-default-rtdb.firebaseio.com/posts';
+const EXT = '.json';
 
-// const getUser = (user) => fetch(`${USERS_URL}/${user.email}${EXT}`);
+// {
+//   "users": {
+//     "princessButtercup": {
+//       "name": "Princess Buttercup",
+//       "password": "abc"
+//     },
+//     "princessPeach": {
+//       "name": "Princess Buttercup",
+//       "password": "123"
+//     }
+//   },
+//   "posts": {
+//     "uuid1": {
+//       "author": "princessButtercup",
+//       "content": "Something Dumb"
+//     }
+//   }
+// }
+
+console.log(location);
+
+// const user = {
+//   username: 'svsarahval@gmail.com',
+//   name: 'Sarah',
+// };
+
+const validateUser = (user) =>
+  new Promise((res, rej) => {
+    setTimeout(() => {
+      res(JSON.stringify({ user, status: 200, ok: true }));
+    }, 2000);
+  });
+
+  	fetch(`${URL}${EXT}`)
+		.then((resp) => resp.json())
+		.then((data) => {
+			petsObj = { ...data };
+// const getUser = (user) => fetch(`${USERS_URL}/${user.username}${EXT}`);
 // const postUser = (user) =>
 //   fetch(`${USERS_URL}${EXT}`, {
 //     method: 'post',
@@ -18,60 +60,96 @@
 //     body: JSON.stringify(user),
 //   });
 
-// function browserValidation() {
-//   if (!password.value || password.value.length < 6) {
-//     return 'password failed';
-//   }
-//   return null;
-// }
+function browserValidation() {
+  if (!password.value || password.value.length < 5) {
+    return 'password failed';
+  }
+  return null;
+}
 
-// const submitBtn = document.getElementById('submitBtn');
-// submitBtn.addEventListener('click', handleLoginSubmit);
+// const logInBtn = document.getElementById('loginBtn');
+logInBtn.addEventListener('click', handleLoginBtn);
 
-// async function handleLoginSubmit(e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-
-//   const user = {
-//     email: email.value,
-//     password: password.value,
-//   };
-//   try {
-//     const validationError = browserValidation();
-//     if (validationError) {
-//       throw Error(validationError);
-//     }
-//     const checkToSeeIfUserExistsInDatabase = await getUser(user);
-//     if (!checkToSeeIfUserExistsInDatabase.ok) {
-//       throw Error('Error validating the user');
-//     }
-//     const userInformationInDatabase =
-//       await checkToSeeIfUserExistsInDatabase.json();
-//     if (!userInformationInDatabase) {
-//       throw Error("Username Doesn't exist");
-//     }
-//     if (userInformationInDatabase) {
-//       localStorage.setItem(
-//         'userInfo',
-//         JSON.stringify(userInformationInDatabase)
-//       );
-//       location.replace('/newsFeed.html');
-//     }
-//   } catch (error) {
-//     alert(error);
-//   }
-// }
-
-// Making sign up  go to Sign up page
-signUpBtn.addEventListener('click', gotoSignUp);
-function gotoSignUp(e) {
+async function handleLoginBtn(e) {
   e.preventDefault();
-  window.location.replace('/signUp.html');
+  e.stopPropagation();
+
+  const user = {
+    username: email.value,
+    password: password.value,
+  };
+  try {
+    const validationError = browserValidation();
+    if (validationError) {
+      throw Error(validationError);
+    }
+    const checkToSeeIfUserExistsInDatabase = await getUser(user);
+    if (!checkToSeeIfUserExistsInDatabase.ok) {
+      throw Error('Error validating the user');
+    }
+    const userInformationInDatabase =
+      await checkToSeeIfUserExistsInDatabase.json();
+    if (!userInformationInDatabase) {
+      throw Error("Username Doesn't exist");
+    }
+    if (userInformationInDatabase) {
+      localStorage.setItem(
+        'userInfo',
+        JSON.stringify(userInformationInDatabase)
+      );
+      location.replace('Landing.html');
+    }
+  } catch (error) {
+    alert(error);
+  }
 }
-// Making Sign In go to Dash page
-logInBtn.addEventListener('click', gotoDash);
-function gotoDash(event) {
-  event.preventDefault();
-  window.location.replace('/Dash.html');
-  alert('working');
-}
+
+// logInBtn.addEventListener('click', function (event) {
+//   event.preventDefault();
+
+//   // Get the email and password values
+//   const emailValue = email.value;
+//   const passwordValue = password.value;
+
+//   // Send a POST request to the server-side script with the email and password values
+//   fetch('https://login-page-sociable-default-rtdb.firebaseio.com/users', {
+//     method: 'POST',
+//     // cors.supportedMethods,
+//     // cors.allowOrigin,
+//     body: JSON.stringify({
+//       email: emailValue,
+//       password: passwordValue,
+//     }),
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       // Check the response from the server-side script
+//       if (data.status === 'success') {
+//         // Login successful, redirect the user to the dashboard or show a success message
+//         window.location.href = '/dashboard';
+//       } else {
+//         // Login failed, show an error message
+//         alert('Invalid email or password. Please try again.');
+//       }
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// });
+
+// // Making sign up  go to Sign up page
+// signUpBtn.addEventListener('click', gotoSignUp);
+// function gotoSignUp(e) {
+//   e.preventDefault();
+//   window.location.replace('/signUp.html');
+// }
+// // Making Sign In go to Dash page
+// logInBtn.addEventListener('click', gotoDash);
+// function gotoDash(event) {
+//   event.preventDefault();
+//   window.location.replace('/Dash.html');
+//   alert('working');
+// }
