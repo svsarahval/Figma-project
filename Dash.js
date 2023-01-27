@@ -9,11 +9,12 @@ function userPostHandler(event) {
   const userPost = userInput.value;
   if (userPost) {
     const container4posts = document.querySelector('#container4posts');
-    const newPost = document.createElement('div');
-    newPost.innerText = userPost;
-    container4posts.prepend(newPost);
   }
 }
+const newPost = document.createElement('div');
+newPost.innerText = userPost;
+container4posts.prepend(newPost);
+
 userPostBtn.addEventListener('click', userPostHandler);
 
 const editBtn = document.createElement('button');
@@ -32,7 +33,7 @@ deleteBtn.addEventListener('click', (event) => {
 });
 newPost.prepend(deleteBtn);
 
-// function deletePost(post) {let postList = document.querySelector('.post-list');postList.removeChild(post.parentNode);}function editPost(post) {// get new post text    var newPostText = prompt("Enter new post text:");    // update post text    post.innerHTML = newPostText;  }
+// function deletePost(post) {let postList = document.querySelector('.post-list');postList.removeChild(post.parentNode);}function editPost(post)  get new post text var newPostText = prompt("Enter new post text:"); update post text post.innerHTML = newPostText;}
 
 // const btnForUserPost = document.createElement('div');
 // btnForUserPost.classList.add('actionBtn');
