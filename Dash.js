@@ -16,6 +16,22 @@ function userPostHandler(event) {
 }
 userPostBtn.addEventListener('click', userPostHandler);
 
+const editBtn = document.createElement('button');
+editBtn.innerText = 'Edit';
+editBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  userInput.value = newPost.innerText;
+});
+newPost.prepend(editBtn);
+
+const deleteBtn = document.createElement('button');
+deleteBtn.innerText = 'Delete';
+deleteBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  newPost.remove();
+});
+newPost.prepend(deleteBtn);
+
 // function deletePost(post) {let postList = document.querySelector('.post-list');postList.removeChild(post.parentNode);}function editPost(post) {// get new post text    var newPostText = prompt("Enter new post text:");    // update post text    post.innerHTML = newPostText;  }
 
 // const btnForUserPost = document.createElement('div');

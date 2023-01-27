@@ -5,28 +5,32 @@
       "lastName": "Valentine",
       "email": "svsarahval@gmail.com",
       "dateOfBirth": "08/31/1992",
-      "password": "password"
+      "password": "password",
+      "picture": "/assets/new users.jpg"
     },
     "user2": {
       "firstName": "Kenny",
       "lastName": "Lattimore",
       "email": "KLat@gmail.com",
       "dateOfBirth": "07/12/1982",
-      "password": "password"
+      "password": "password",
+      "picture": "/assets/kenny.jpg"
     },
     "user3": {
       "firstName": "Kia Ki Ki",
       "lastName": "Johnson",
       "email": "kikijohnson@gmail.com",
       "dateOfBirth": "08/13/1986",
-      "password": "password"
+      "password": "password",
+      "picture": "/assets/ki ki.jpg"
     },
     "user4": {
       "firstName": "Nathan Royal Seed",
       "lastName": "Tate",
       "email": "NathTate2@gmail.com",
       "dateOfBirth": "05/04/2001",
-      "password": "password"
+      "password": "password",
+      "picture": "/assets/Nathan.jpg"
     }
   },
   "posts": {
