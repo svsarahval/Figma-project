@@ -45,13 +45,18 @@ background-position: center;
  } 
 
 /* Post section */
-.userpost{
+.userPost{
    display: flex;
  flex-direction: column;
- justify-content: center;
+ justify-content: space-between;
+ align-items: center;
  padding:  3em;
  length : 10em;
  width: 40em;
+  padding-top:  2em;
+ padding-left: 3em;
+ padding-right: 3em;
+ font-size: 1.35em;
 }
 
 
