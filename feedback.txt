@@ -1,0 +1,47 @@
+Requirements:
+[G] Use Flexbox or Grid system layout for the basic structure of your elements
+[R] Be able to navigate to the different pages. For example, clicking on "Login" should bring me to the login page, filling out the information and clicking "login" should then lead me to the dashboard page. Then, clicking "logout" should bring me back to the home page.
+[G] You will have 4 pages that are responsive to screen sizes. Each page will include both mobile and desktop views.
+[G] Separate your CSS files by pages. Do NOT have one giant CSS file
+
+_ Hardcode any text and don't worry about getting information from somewhere else (...for now)
+_ You CAN use reusable components from Bootstrap
+_ If you want to make something different from your mockup, that's fine, just don't change too much without keeping track of your changes and modifying the mockup if need be.
+
+General:
+_ Use CDNs to import libraries.
+_ File naming conventions
+  -> no spaces
+  -> No TitleCase
+  -> camelCase 
+  -> hyphen-as-space (alternative)
+  -> all assets in assets (or similar) folder
+_ Missing content width in html ( see line 6 )
+_ <img> tags should have alt attribute w/ value
+_ { margin: 0 auto; } to center content horizontally
+_ remove files/folders/libraries that are not used
+
+test.html
+_ blank file
+
+signup.html
+_ mobile & desktop layouts
+
+login.html
+_ 'Sign up!' btn does not link to signup.html
+_ mobile layout
+_ desktop layout - scroll to login form
+
+landing.html
+_ welcome text, desktop -- difficult to read, poor accessibility -- fine mobile
+_ 'Sign Up' / 'Sign In' do not link to appropriate pgs
+
+desktoplanding.html
+_ Broken / incomplete page
+
+Dash.html
+_ impropper file name ( dash.html )
+_ aside.friendsProfile div.profilePic 
+  -> no content
+_ desktop view missing or incomplete flex layout
+_ no signout option
