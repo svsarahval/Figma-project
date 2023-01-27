@@ -45,6 +45,16 @@ background-position: center;
  } 
 
 /* Post section */
+.userpost{
+   display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding:  3em;
+ length : 10em;
+ width: 40em;
+}
+
+
 
 .container4posts{
  display: flex;

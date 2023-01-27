@@ -16,7 +16,12 @@
       <h1 class="words">Log In</h1>
     </header>
     <main>
-      <form class="login" id="loginForm">
+      <form
+        action=""
+        onsubmit="e.preventDefault(); handleFormSubmit(); autocomplete = off"
+        class="login"
+        id="loginForm"
+      >
         <label class="label">Email: </label>
         <input
           class="formBox"
@@ -24,7 +29,6 @@
           type="email"
           placeholder="Enter Email"
           name="email"
-          
         />
         <label class="label">Password : </label>
         <input
@@ -33,10 +37,9 @@
           type="password"
           placeholder="Enter Password"
           name="password"
-          
         />
         <div class="new">
-           <button class="button" id="logInBtn">Login</button>
+          <button class="button" id="logInBtn">Login</button>
           <!-- <p class="forgotPassword">Forgot Password?</p> -->
           <p class="noaccount">Don't Have an account?</p>
           <button class="signup" id="signUpBtn">Sign up!</button>
