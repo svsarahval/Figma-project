@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=, initial-scale=1.0">
- <title>Sociable: Sign UP</title>
- <link rel="stylesheet" href="signup.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Sociable: Sign UP</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="/signup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="greeting">Welcome to Sociable</h1>
+      <h1 class="greeting">Join our Community</h1>
+    </header>
+    <main>
+      <form class="form">
+        <div class="wrapper">
+          <label>First Name:</label>
+          <input
+            id="firstName"
+            class="formbx"
+            type="text"
+            placeholder="Enter First Name"
+            name="fname"
+            required
+          />
+        </div>
 
- <header>
-  <h1 class="greeting">Welcome to Sociable</h1>
-  <h1 class="greeting">Join our Community</h1>
- </header>
- <main>
-  <form class="form">
+        <div class="wrapper">
+          <label>Last Name: </label>
+          <input
+            id="lastName"
+            class="formbx"
+            type="text"
+            placeholder="Enter Last Name"
+            name="lname"
+            required
+          />
+        </div>
 
-<div class="wrapper">
-    <label>First Name:</label> <input class="formbx" type="text" placeholder="Enter First Name" name="fname" required>
-    </div>
+        <div class="wrapper">
+          <label>Email:</label>
+          <input
+            id="email"
+            class="formbx"
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            required
+          />
+        </div>
 
-    <div class="wrapper">
-    <label>Last Name: </label> <input class="formbx" type="text" placeholder="Enter Last Name" name="lname" required>
-    </div>
+        <div class="wrapper">
+          <label>Date Of Birth: </label>
+          <input
+            id="birthDate"
+            class="formbx"
+            type="date"
+            placeholder="Enter Birthdate"
+            name="dob"
+            required
+          />
+        </div>
 
-  <div class="wrapper">
-   <label>Email:</label>
-    <input class="formbx " type="email" placeholder="Enter Email" name="email" required></div>
-     
-     <div class="wrapper"> 
-    <label>Date Of Birth: </label> <input class="formbx" type="date" placeholder="Enter Birthdate" name="dob" required>
-    </div>
+        <div class="wrapper">
+          <label>Password : </label>
+          <input
+            id="password"
+            class="formbx"
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+        </div>
 
-    <div class="wrapper">
-    <label>Password : </label> <input class="formbx" type="password" placeholder="Enter Password" name="password" required>
-    </div>
+        <div class="wrapper">
+          <label>Confirm Password : </label>
+          <input
+            id="confPass"
+            class="formbx"
+            type="password"
+            placeholder="Confirm Password"
+            name="password"
+            required
+          />
+        </div>
 
-    <div class="wrapper">
-    <label>Confirm Password : </label> <input class="formbx" type="password" placeholder="Confirm Password" name="password" required>
-    </div>
-    
-    <div class="btncontain">
-    <button class="btn">Submit</button>
-  </div>
-  </form>
-  <footer class="logo"> <img src="/Logo.png" alt="Logo"></footer>
- 
- </main>
-
- 
-</body>
+        <div class="btncontain">
+          <button id="submitBtn" class="btn">Submit</button>
+        </div>
+      </form>
+      <footer class="logo"><img src="/Logo.png" alt="Logo" /></footer>
+    </main>
+  </body>
 </html>
