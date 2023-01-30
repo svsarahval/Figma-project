@@ -21,7 +21,7 @@ submitBtn.addEventListener('click', (e) => {
   };
 
   fetch(`${USER_URL}${EXT}`, {
-    method: 'PUT',
+    method: 'POST',
     body: JSON.stringify(newUser),
     headers: {
       'Content-Type': 'application/json',
@@ -38,32 +38,3 @@ submitBtn.addEventListener('click', (e) => {
       console.error(error);
     });
 });
-
-// submitBtn.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   let newUser = {
-//     firstName: firstName.value,
-//     lastName: lastName.value,
-//     email: email.value,
-//     password: password.value,
-//     birthDate: birthDate.value,
-//     confPass: confPass.value,
-//   });
-
-// fetch(`{$USER_URL}${EXT}`, {
-//   method: 'PUT',
-//   body: JSON.stringify(newUser),
-//   // headers: {
-//   //   'Content-Type': 'application/json',
-//   // },
-// })
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(newUser);
-//     window.location.href = 'Dash.html';
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });

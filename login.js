@@ -25,7 +25,7 @@ logInBtn.addEventListener('click', async (event) => {
       // store user information in a secure way
       localStorage.setItem('userInfo', JSON.stringify(data));
       // redirect to user dashboard
-      window.location.replace('Dash.html');
+      window.location.replace('Dashboard.html');
     } else {
       // display an error message
     }
@@ -33,16 +33,3 @@ logInBtn.addEventListener('click', async (event) => {
     console.log(error);
   }
 });
-
-// // Making sign up  go to Sign up page
-// signUpBtn.addEventListener('click', gotoSignUp);
-// function gotoSignUp(e) {
-//   e.preventDefault();
-//   window.location.replace('/signUp.html');
-// }
-// // Making Sign In go to Dash page
-// logInBtn.addEventListener('click', gotoDash);
-// function gotoDash(event) {
-//   event.preventDefault();
-//   window.location.replace('/Dash.html');
-//   alert('working');
